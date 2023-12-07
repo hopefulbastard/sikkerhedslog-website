@@ -11,7 +11,3 @@ function attemptLogin() {
         }
     }
     
-        // Logout Function
-    function logout() {
-        location.replace("index.html")
-    }
