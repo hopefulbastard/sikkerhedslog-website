@@ -6,6 +6,23 @@
     <title>Sikkerhedslog</title>
 </head>
 <body>
-    
+    <div class="login-container" id="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Brugernavn:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="attemptLogin()">Login</button>
+
+             <!-- Logout Button -->
+        <!-- <button type="button" onclick="logout()">Logout</button> -->
+        </form>
+        <p id="loginMessage"></p>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
