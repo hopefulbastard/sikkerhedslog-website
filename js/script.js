@@ -10,4 +10,4 @@ function attemptLogin() {
             document.getElementById("loginMessage").innerHTML = "Invalid username or password";
         }
     }
-    
+
