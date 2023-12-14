@@ -10,15 +10,16 @@
 <body onload="loggedInStatus(), GetAll()">
 
     <nav>
-            <a class="btn btn-primary" href="sikkerhedslog.html">Sikkerhedslog</a>
-            <a class="btn btn-primary" href="tracker.html">Tracker</a>
-            <a class="btn btn-primary" href="kontrol.html">Kontrol</a>
-            <a class="btn btn-primary" href="overvaagning.html">Overvågning</a>
-            <a class="btn btn-primary" href="personale.html">Personale</a>
-            <a class="btn btn-primary" onclick="logOut()" href="index.html">Log-out</a>
+            <a class="btn btn-outline-dark" href="sikkerhedslog.html">Sikkerhedslog</a>
+            <a class="btn btn-outline-dark" href="tracker.html">Tracker</a>
+            <a class="btn btn-outline-dark" href="kontrol.html">Kontrol</a>
+            <a class="btn btn-outline-dark" href="overvaagning.html">Overvågning</a>
+            <a class="btn btn-outline-dark" href="personale.html">Personale</a>
+            <a class="btn btn-outline-dark" onclick="logOut()" href="index.html">Log ud</a>
     </nav>
     
-    <h1>Sikkerhedslog</h1>
+    <main>
+        <h2>Sikkerhedslog</h2>
 
     <table id="sikkerhedslog">
         <tr>
@@ -27,6 +28,8 @@
         </tr>
 
     </table>
+    </main>
+    
 
     <script src="/js/script.js"></script>
 
