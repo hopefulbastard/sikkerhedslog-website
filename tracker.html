@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Tracker</title>
 </head>
-<body>
+<body onload="loggedInStatus(), Tracker()">
     
     <nav>
-        <ul>
-            <li><a href="sikkerhedslog.html">Sikkerhedslog</a></li>
-            <li><a href="tracker.html">Tracker</a></li>
-            <li><a href="kontrol.html">Kontrol</a></li>
-            <li><a href="overvaagning.html">Overvågning</a></li>
-            <li><a href="personale.html">Personale</a></li>
+        <a class="btn btn-primary" href="sikkerhedslog.html">Sikkerhedslog</a>
+        <a class="btn btn-primary" href="tracker.html">Tracker</a>
+        <a class="btn btn-primary" href="kontrol.html">Kontrol</a>
+        <a class="btn btn-primary" href="overvaagning.html">Overvågning</a>
+        <a class="btn btn-primary" href="personale.html">Personale</a>
+        <a class="btn btn-primary" onclick="logOut()" href="index.html">Log-out</a>
+</nav>
 
-            <li><a href="index.html">Log-out</a></li>
-        </ul>
-        
-    </nav>
+<h1>Tracker</h1>
+
+<div>
+    <input type="number" id="tracker" disabled>
+    <input type="button" id="trackerAdd" value="Tracker" onclick="TrackerAdd()">
+    <input type="button" id="trackerReset" value="Nulstil" onclick="TrackerReset()">
+</div>
+
+
+<script src="/js/script.js"></script>
 
 </body>
 </html>

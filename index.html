@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Sikkerhedslog</title>
 </head>
 <body>
+
+    <nav>
+        <a class="btn btn-primary" href="sikkerhedslog.html">Sikkerhedslog</a>
+        <a class="btn btn-primary" href="tracker.html">Tracker</a>
+        <a class="btn btn-primary" href="kontrol.html">Kontrol</a>
+        <a class="btn btn-primary" href="overvaagning.html">Overvågning</a>
+        <a class="btn btn-primary" href="personale.html">Personale</a>
+        <a class="btn btn-primary" href="index.html">Log ind</a>
+    </nav>
+
     <div class="login-container" id="loginContainer">
         <h2>Login</h2>
         <form id="loginForm">
@@ -15,7 +27,7 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="button" onclick="attemptLogin()">Login</button>
+            <button class="btn btn-primary" type="button" onclick="attemptLogin()">Login</button>
 
             
         </form>
