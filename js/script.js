@@ -14,8 +14,8 @@ function attemptLogin() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
-    if (username === "karzan" && password === "magnus"){
-        localStorage.setItem("LoggedUser", "Karzan");
+    if (username === "admin" && password === "admin"){
+        localStorage.setItem("LoggedUser", "Admin");
         location.replace("sikkerhedslog.html");
     }
     else {
@@ -112,3 +112,25 @@ function TrackerReset(){
     localStorage.removeItem("trackerValue");
 }
     
+//3.parts API request
+function makeApiRequest() {
+
+    // Construct the API URL with the query parameter
+    var apiUrl = "https://api.thecatapi.com/v1/images/search?api_key=live_YXTGcMLpUYMQESHJqRJKDwZHTXQgi72eGz66n8flUtuS2sfcwmZ92xuYeVDrkWex";
+
+    // Make a GET request to the API
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            // Handle the API response data
+            console.log(data);
+
+            data.forEach(object => {
+                document.getElementById("catPhoto").src = object.url;                
+            });
+        })
+        .catch(error => {
+            // Handle errors
+            console.error('Error:', error);
+        });
+}
