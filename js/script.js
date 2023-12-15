@@ -29,10 +29,10 @@ function logOut(){
 
 /* Sikkerhedslog */
 
-const url = "http://localhost:5165/api/SikkerhedsLogs";
+const url = "https://3semesterprojektapi20231215133325.azurewebsites.net/api/";
 
 async function GetAll(){
-    const response = await fetch(url);
+    const response = await fetch(url + "SikkerhedsLogs");
     const logs = await response.json();
 
     if(logs != null){
