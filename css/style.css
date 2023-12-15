@@ -60,3 +60,8 @@ th, td{
     border-radius: 10px;
     border: 1px solid #6c767c;
 }
+
+#catPhoto{
+    margin-top: 10px;
+    max-height: 75vh;
+}
